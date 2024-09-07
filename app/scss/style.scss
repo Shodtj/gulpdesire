@@ -67,6 +67,17 @@ margin: 0 auto;
         margin-bottom: 22px;
         padding-left: 30px;
         display: inline-block;
+        position: relative;
+        &::before{
+           content: '';
+           background-image: url(../images/envelope.svg); 
+           position: absolute;
+           top: 8px;
+           left: 0;
+           width: 16px;
+           height: 12px;
+        }
+
     }
     &__form{
         display: flex;
@@ -101,10 +112,18 @@ margin: 0 auto;
     &__social{
         width: 125px;
         margin-right: auto;
-        margin-left: 99px;
+        margin-left: 100px;
     }
     &__social-link{
         padding-left: 28px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 16px;
+            height: 12px;
+        }
     }
     &__social-item,
     &__menu-item{
